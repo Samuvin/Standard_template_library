@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+    srand(time(NULL)); // srand(unsigned int)  // time ttime(time_t *T);
+    for (int i = 0; i < 5; i++)
+    {
+        cout << rand() % 100 << " ";
+    }
+    cout << "\n";
+    // between range
+    int low = 10, high = 100;
+    int range = high - low + 1;
+    for (int i = 0; i < 5; i++)
+    {
+        cout << (rand() % range) + low << " ";
+    }
+}
